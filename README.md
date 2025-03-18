@@ -1,7 +1,7 @@
 # 🌟 AI-Powered Image Search Engine 🔍✨
 
 ## 📌 Description  
-An intelligent **reverse image search** web app where users can upload an image, and the system finds similar images using AI-powered APIs. This project blends **computer vision, API integration, and a stunning UI**.
+An intelligent **reverse image search** web app where users can upload an image, and the system finds similar images using AI-powered APIs. This project blends **computer vision, API integration, and a stunning UI** by the team **LazyDevs**.
 
 ---
 
