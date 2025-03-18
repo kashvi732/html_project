@@ -1,15 +1,3 @@
-# 🌟 AI-Powered Image Search Engine 🔍✨
-
-## 📌 Description  
-An intelligent **reverse image search** web app where users can upload an image, and the system finds similar images using AI-powered APIs. This project blends **computer vision, API integration, and a stunning UI** by the team **LazyDevs**.
-
----
-
-## 🎨 **Live Demo Preview (HTML, CSS & JS)**  
-
-Here’s a **customized HTML, CSS & JavaScript snippet** showcasing part of the project:  
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,10 +52,42 @@ Here’s a **customized HTML, CSS & JavaScript snippet** showcasing part of the 
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         }
+        .team-section {
+            margin-top: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 80%;
+            max-width: 600px;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .team-member {
+            margin: 10px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .team-member p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <h1>AI-Powered Image Search 🔍✨</h1>
+    
     <div class="upload-box">
         <label for="file-upload" class="upload-label">Upload an Image</label>
         <input type="file" id="file-upload">
@@ -78,6 +98,39 @@ Here’s a **customized HTML, CSS & JavaScript snippet** showcasing part of the 
         <img src="https://source.unsplash.com/featured/?city" alt="Sample Image">
         <img src="https://source.unsplash.com/featured/?technology" alt="Sample Image">
     </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <h2>Meet the Team 💡</h2>
+        <div class="team-members" id="team-members">
+            <!-- Team members will be added dynamically using JS -->
+        </div>
+    </div>
+
+    <script>
+        // Team Members Data
+        const team = [
+            { name: "Kashvi Goyal", img: "https://via.placeholder.com/80" },
+            { name: "Shivin Azad", img: "https://via.placeholder.com/80" },
+            { name: "Sambhav Sehgal 3", img: "https://via.placeholder.com/80" },
+            { name: "Shivansh Chandel ", img: "https://via.placeholder.com/80" }
+        ];
+
+        // Dynamically Add Team Members to the Page
+        const teamContainer = document.getElementById("team-members");
+
+        team.forEach(member => {
+            const memberDiv = document.createElement("div");
+            memberDiv.classList.add("team-member");
+
+            memberDiv.innerHTML = `
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCzTQbOmchhZKVFzunxU3qk2JdP8NC4kxxcA&s">
+                <p>${member.name}</p>
+            `;
+            
+            teamContainer.appendChild(memberDiv);
+        });
+    </script>
 </body>
 </html>
 
