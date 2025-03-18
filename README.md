@@ -74,7 +74,7 @@ html
     </div>
 
     <div class="slider-container">
-        <img src="https://source.unsplash.com/featured/?nature" alt="Sample Image">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Frushtechhub.com%2Fai-powered-search-engine%2F&psig=AOvVaw026H4-2_gAUyJq_tTFZaFT&ust=1742359741120000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODTpNHqkowDFQAAAAAdAAAAABAE">
         <img src="https://source.unsplash.com/featured/?city" alt="Sample Image">
         <img src="https://source.unsplash.com/featured/?technology" alt="Sample Image">
     </div>
