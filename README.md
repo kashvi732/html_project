@@ -77,6 +77,7 @@
             height: 80px;
             border-radius: 50%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
         }
         .team-member p {
             font-size: 16px;
@@ -112,8 +113,8 @@
         const team = [
             { name: "Kashvi Goyal", img: "https://via.placeholder.com/80" },
             { name: "Shivin Azad", img: "https://via.placeholder.com/80" },
-            { name: "Sambhav Sehgal 3", img: "https://via.placeholder.com/80" },
-            { name: "Shivansh Chandel ", img: "https://via.placeholder.com/80" }
+            { name: "Sambhav Sehgal", img: "https://via.placeholder.com/80" },
+            { name: "Shivansh Chandel", img: "https://via.placeholder.com/80" }
         ];
 
         // Dynamically Add Team Members to the Page
@@ -124,7 +125,7 @@
             memberDiv.classList.add("team-member");
 
             memberDiv.innerHTML = `
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCzTQbOmchhZKVFzunxU3qk2JdP8NC4kxxcA&s">
+                <img src="${member.img}" alt="${member.name}">
                 <p>${member.name}</p>
             `;
             
@@ -133,4 +134,5 @@
     </script>
 </body>
 </html>
+
 
